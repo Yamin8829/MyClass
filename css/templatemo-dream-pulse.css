@@ -24,6 +24,7 @@ body {
  width: 140px;
  position: relative;
  left: 2rem;
+ border-radius: 100% ;
  outline: solid 4px white;
  
 }
