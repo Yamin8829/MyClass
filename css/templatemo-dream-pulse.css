@@ -5,7 +5,9 @@ DREAM PULSE
 https://templatemo.com/tm-536-dream-pulse
 
 */
-
+/* *{
+  border: solid 1px black;
+} */
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -14,7 +16,52 @@ body {
   color: #707172;
   background-color: #666;
 }
+.yam{
+  background-image: url(../img/author-ps.jpg);
+  background-position: center;
+  background-size: cover;
+ height: 140px;
+ width: 140px;
+ position: relative;
+ left: 2rem;
+ outline: solid 4px white;
+ 
+}
+ .myText{
+   position: relative;
+   bottom: 4rem;
+   margin-right: 2rem;
+   margin-left: 2rem;
+  
+ }
+.blanket{
+  position: absolute;
+    left: -0.1rem;
+    right: -0.1rem;
+    height: 15rem;
+ 
+    background: #331a56;
+    border-radius: 1.5rem 1.5rem 0 0;
+ 
+}
+.blanket2{
+    background-image: url(../img/cover-ps.jpg);
+    background-size: 100% 100%;
+   padding: 6em;
+   margin-right: 2rem;
+   margin-left: 2rem;
+    top: 3rem;
+    
+    border-radius: 1.5rem 1.5rem 0 0;
+position: relative;
 
+ 
+}
+.wrapp{
+  
+  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+  
+}
 p {
   line-height: 2;
 }
