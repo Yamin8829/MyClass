@@ -25,7 +25,7 @@ body {
  position: relative;
  left: 2rem;
  border-radius: 100% ;
- outline: solid 4px white;
+border: solid 4px white;
  
 }
  .myText{
