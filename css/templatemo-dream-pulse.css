@@ -13,56 +13,236 @@ body {
   font-size: 18px;
   font-weight: 400;
   overflow-x: hidden;
-  color: #707172;
-  background-color: #666;
+  /* color: #707172; */
+  color: #3a235a;;
+  /* background-color: #666; */
+  background-color: #331a56;
 }
-.yam{
+.fotoku{
   background-image: url(../img/author-ps.jpg);
   background-position: center;
   background-size: cover;
  height: 140px;
+ margin: auto;
  width: 140px;
- position: relative;
- left: 2rem;
+top: -25px;
+position: relative;
  border-radius: 100% ;
 border: solid 4px white;
- 
 }
  .myText{
-   position: relative;
-   bottom: 4rem;
-   margin-right: 2rem;
-   margin-left: 2rem;
-  
+   
+position: relative;
+top: -10px;
  }
-.blanket{
+.bg-foto-sampulku{
   position: absolute;
     left: -0.1rem;
     right: -0.1rem;
-    height: 15rem;
- 
+    height: 13rem; 
     background: #331a56;
     border-radius: 1.5rem 1.5rem 0 0;
  
 }
-.blanket2{
-    background-image: url(../img/cover-ps.jpg);
-    background-size: 100% 100%;
-   padding: 6em;
-   margin-right: 2rem;
-   margin-left: 2rem;
-    top: 3rem;
-    
-    border-radius: 1.5rem 1.5rem 0 0;
-position: relative;
+.bg-foto-sampul-xa{
+  background: #eec42b;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 250px; 
+  border-radius: 1.5rem 1.5rem 0 0;
+}
 
- 
+.foto-sampul-xa{
+  background-image: url(../img/gallery/large/05.jpg);
+    background-size: 100% 100%;
+   padding: 200px; 
+   top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 1.5rem 1.5rem .3rem .3rem;
+   position: relative;
+   z-index: 1;
 }
-.wrapp{
+.bola{
+  position: absolute;
+   background: #9c82c9;
+   padding: 100px;
+   height: 250px;
+   width: 400px;
+   right: 0;
+   bottom: 0;
+   z-index: 0;
+   border-radius: 100% 0 10% 0;
+ }
+ .bola2{
+  position: absolute;
+  background: #9c82c9;
+  padding: 100px;
+  height: 250px;
+  width: 400px;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  border-radius:0 100% 0 10%;
+ }
+ .foto-sampulku{
+     background-image: url(../img/cover-ps.jpg);
+     background-size: 100% 100%;
+    padding: 6em;
+    background-position: center center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    top: 2rem;
+    border-radius: 1.5rem 1.5rem .3rem .3rem;
+    position: relative;
+ }
+ .bg-kelas{
+   position: absolute;
+  left: 0;
+  right: 0;
+  top: 45px;
+     height: 5rem; 
+   background: #9c82c9;
+   border-radius: 1.5rem 1.5rem 0 0;
+ }
+ .tai{
+   position: relative;
+ }
+ .sampul-kelas{
+   position: absolute;
+   left: -0.1rem;
+     right: -0.1rem;
+     height: 5rem; 
+   background: #c2a5f3;
+   border-radius: 1.5rem 1.5rem 0 0;
+ }
+ .cardku {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   min-width: 0;
+   word-wrap: break-word; 
+   background-clip: border-box; 
+   border-radius: 0.25rem;
+ }
+ .img-fluidku {
+   max-width: 100%;
+   height: auto;
+   border-radius: 1.5rem 1.5rem 0 0;
+ }
   
-  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
-  
+ .text-kelasku{
+   position: relative;
+   text-align: center;
+ }
+ .text-kelas{
+   font-weight: bold;
+   color: black;
+   z-index: 2;
+   text-align: center;
+   position: relative;
+   margin-top: 50px;
+   margin-left: 19px;
+   padding-bottom: .4rem;
+ }
+@media (max-width: 860px) {
+  .foto-sampul-xa {
+    padding: 180px;
+    margin-left: 10px;
+    margin-right: 10px;
+    top: 15px;
+
+  }
+  .bg-foto-sampul-xa{
+    height: 14rem;
+  }
+  .bola{
+    bottom: 20px;
+    padding: 3px;
+    width: 280px;
+    height: 180px;
+    z-index: 0;
+  }
+  .bola2{
+    bottom: 20px;
+    padding: 3px;
+    width: 280px;
+    height: 180px;
+    z-index: 0;
+  }
 }
+@media (max-width: 660px) {
+  .foto-sampul-xa {
+    padding: 140px;
+    margin-left: 10px;
+    margin-right: 10px;
+    top: 15px;
+    z-index: 1;
+    position: relative;
+  }
+  .bg-foto-sampul-xa{
+    height: 12rem;
+  }
+  .text-kelas{
+    position: relative;
+    top: -20px;
+    font-size: small;
+  }
+  .bola{
+    bottom: 20px;
+    padding: 3px;
+    width: 210px;
+    height: 160px;
+    z-index: 0;
+  }
+  .bola2{
+    bottom: 20px;
+    padding: 3px;
+    width: 210px;
+    height: 160px;
+    z-index: 0;
+  }
+}
+@media (max-width: 460px) {
+  .foto-sampul-xa {
+    padding: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    top: 15px; 
+    z-index: 1;
+  }
+  .bg-foto-sampul-xa{
+    height: 8rem;
+  }
+  .myText{
+    font-size: small;
+  }
+  .text-kelas{
+    position: relative;
+    top: -20px;
+    font-size: small;
+  }
+  .bola{
+    bottom: 20px;
+    padding: 3px;
+    width: 180px;
+    height: 145px;
+    z-index: 0;
+  }
+  .bola2{
+    bottom: 20px;
+    padding: 3px;
+    width: 180px;
+    height: 145px;
+    z-index: 0;
+  }
+  .bg-kelas{
+   height: 3rem;
+  }
+}
+
+
 p {
   line-height: 2;
 }
@@ -81,7 +261,7 @@ a {
 }
 
 .tm-color-primary {
-  color: #069;
+  color: #331a56;
 }
 
 .tm-color-gray {
@@ -270,7 +450,7 @@ a {
 
 .tm-social-link:hover,
 .tm-social-link:focus {
-  background-color: #069;
+  background-color: #331a56;
   color: white;
 }
 
@@ -288,7 +468,7 @@ a {
 }
 
 .tm-section-icon {
-  color: #369;
+  color:  #331a56;
   width: 120px;
   height: 120px;
   display: flex;
@@ -364,9 +544,26 @@ a {
   float: left;
   overflow: hidden;
   margin-bottom: 0;
-  background: #3085a3;
+  background: #331a56;
   text-align: center;
   cursor: pointer;
+  border-radius: .5rem;
+}
+
+.grid-gallery{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-row-gap: 1rem;
+  background-color: #eec42b;
+  border-radius: .5rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+@media (max-width: 800px) {
+  .grid-gallery {
+ 
+  grid-template-columns: auto;
+  }
 }
 
 .tm-gallery-item figure img {
@@ -375,6 +572,7 @@ a {
   min-height: 100%;
   max-width: 100%;
   opacity: 0.8;
+  
 }
 
 .tm-gallery-item figure figcaption {
@@ -436,9 +634,7 @@ a {
 /***** Bubba *****/
 /*---------------*/
 
-figure.effect-bubba {
-  background: #069;
-}
+ 
 
 figure.effect-bubba img {
   opacity: 1;
@@ -720,4 +916,11 @@ figure.effect-bubba:hover p {
   .tm-box-pad {
     padding: 50px 30px;
   }
+}
+.myfoot{
+  background-color: #24123c;
+  margin-left: -.1px;
+  padding: 1.3rem;
+  text-align: center;
+   /* background-color: red; */
 }
