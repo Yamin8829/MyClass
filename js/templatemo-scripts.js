@@ -68,6 +68,7 @@ $(document).ready(function() {
 
   $(".navbar-toggler").on("click", function(e) {
     $(".tm-sidebar").toggleClass("show");
+    $(".burger").toggleClass('toggle');
     e.stopPropagation();
   });
 
@@ -76,10 +77,15 @@ $(document).ready(function() {
 
     if (!sidebar.contains(e.target)) {
       $(".tm-sidebar").removeClass("show");
+      $(".burger").removeClass("toggle");
+     
+  
     }
   });
 
   $("#tmMainNav .nav-link").click(function(e) {
     $(".tm-sidebar").removeClass("show");
+    $(".burger").removeClass("toggle");
+
   });
 });

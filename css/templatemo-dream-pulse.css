@@ -852,7 +852,13 @@ figure.effect-bubba:hover p {
     padding: 15px;
     transition: all 0.3s ease;
   }
-
+  .burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px;
+    transition: all 0.5s ease;
+}
   .navbar-toggler {
     display: block;
     position: fixed;
@@ -860,7 +866,7 @@ figure.effect-bubba:hover p {
     top: 0;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 10px 15px;
+    padding: 10px 10px;
     transition: all 0.3s ease;
     border-radius: 0;
     border-top-right-radius: 5px;
@@ -916,6 +922,15 @@ figure.effect-bubba:hover p {
   .tm-box-pad {
     padding: 50px 30px;
   }
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
 }
 .myfoot{
   background-color: #24123c;
